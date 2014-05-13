@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>{{title}} - microblog</title>
+  </head>
+  <body>
+      <table>
+      {% for rec in datas %}
+        <tr><td><a href={{rec.link}}>{{rec.title}}</a></td>
+<td>{{rec.author}}</td>
+<td>{{rec.summary|safe}}</td>
+<td>{{rec.published}}</td>
+</tr>
+      {% endfor %}
+	</table>
+  </body>
+</html>
